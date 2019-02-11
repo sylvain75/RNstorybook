@@ -1,11 +1,13 @@
 import { AppRegistry } from 'react-native';
 import { getStorybookUI, configure } from '@storybook/react-native';
+import { loadStories } from './storyLoader';
 
 import './rn-addons';
 
 // import stories
 configure(() => {
-  require('../App/stories/Button.stories');
+  loadStories()
+  // require('../App/stories/Button.stories');
   // require('./stories');
 }, module);
 
