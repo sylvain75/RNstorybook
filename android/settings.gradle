@@ -1,0 +1,3 @@
+rootProject.name = 'storybook_sample'
+
+include ':app'
